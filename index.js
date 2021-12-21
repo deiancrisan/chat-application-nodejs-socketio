@@ -12,9 +12,9 @@ const {
   getIndividualRoomUsers
 } = require('./helper/userHelper');
 
-const app = express();
-const server = http.createServer(app);
-const io = socketio(server);
+const app = express(); // calls for the module and line
+const server = http.createServer(app); // calls for the calls for http module. It creates the server using the express module. 
+const io = socketio(server); // 
 
   // with the socket server instance initialized, we can now emit and listen to events between the server and client. In our code, we started by listening to a joinRoom event from the client. This event handles the following: A new client joining a room/The general message broadcasted when new users connect/Current users in a room.
 

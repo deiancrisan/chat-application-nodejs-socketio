@@ -1,6 +1,5 @@
 
 const moment = require('moment');
-
 function formatMessage(username, text){
     return {
         username,
@@ -8,7 +7,8 @@ function formatMessage(username, text){
         time: moment().format('h:mm a')
     };
 }
-
+console.log(formatMessage);
 module.exports = formatMessage;
+
 
 // This function takes in the username and message as arguments, and returns an object containing a formatted time, username, and message. 
